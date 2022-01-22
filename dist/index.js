@@ -18931,7 +18931,7 @@ const { action } = __nccwpck_require__(3348);
 
 action(github.context.payload).catch((error) => {
   // Action threw an error. Fail the action with the error message.
-  core.error(error.stack);
+  core.debug(error.stack);
   core.setFailed(error.message);
 });
 
